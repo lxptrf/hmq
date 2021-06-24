@@ -1,0 +1,594 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 1000px;
+        height: 1500px;
+        background-color: rgb(255, 255, 255);
+        /* position: relative; */
+        /* left: 250px; */
+        margin: auto;
+    }
+    
+    header h1 {
+        position: absolute;
+        color: white;
+        top: 110px;
+        left: 370px;
+        font-size: 45px;
+        margin: 0 auto;
+        animation: move 5s Ease-out infinite normal;
+    }
+    
+    @keyframes move {
+        0% {
+            transform: translate(0, 0);
+            color: rgb(141, 13, 141);
+        }
+        40% {
+            transform: rotate(360deg);
+        }
+        80% {
+            transform: scale(3);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    header ul {
+        top: 50px;
+        left: 100px;
+        position: absolute;
+        font-size: 25px;
+        color: white;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        color: rgb(207, 191, 102);
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
+    
+    .ach {
+        position: absolute;
+        top: 270px;
+        left: 480px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        display: block;
+        border: 3px solid white;
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        letter-spacing: 5px;
+    }
+    
+    .wsw {
+        position: absolute;
+        left: 280px;
+        color: rgb(97, 94, 94);
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        border: 3px solid rgb(209, 232, 243);
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        transition: all 0.6s;
+    }
+    
+    .wsw:hover {
+        transform: scale(1.4);
+        color: rgb(238, 187, 238);
+    }
+    
+    .first {
+        width: 1000px;
+        height: 280px;
+        background-color: rgb(248, 249, 235);
+        position: absolute;
+        top: 390px;
+    }
+    
+    .bch {
+        position: absolute;
+        color: rgb(128, 122, 122);
+        left: 50px;
+        top: 17px;
+        font-size: 20px;
+    }
+    
+    .cch {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        transition: all 0.6s;
+        width: 210px;
+        height: 200px;
+    }
+    
+    .cch:hover {
+        transform: scale(1.4);
+    }
+    
+    .dch {
+        position: absolute;
+        color: rgb(128, 122, 122);
+        width: 180px;
+        height: 180px;
+        left: 350px;
+        display: block;
+        border: 3px solid rgb(232, 231, 226);
+        width: 200px;
+        height: 275px;
+        padding-left: 20px;
+        transition: all 0.6s;
+    }
+    
+    .dch:hover {
+        transform: scale(1.4);
+        color: rgb(231, 164, 231);
+    }
+    
+    .ech {
+        position: absolute;
+        color: rgb(128, 122, 122);
+        width: 180px;
+        height: 180px;
+        left: 700px;
+        text-align: center;
+        display: block;
+        border: 3px solid rgb(232, 231, 226);
+        width: 200px;
+        height: 275px;
+        transition: all 0.6s;
+    }
+    
+    .ech:hover {
+        transform: scale(1.4);
+        color: rgb(231, 164, 231);
+    }
+    
+    .second {
+        position: absolute;
+        width: 160px;
+        height: 7px;
+        background-color: rgb(109, 172, 204);
+        top: 710px;
+        left: 50px;
+    }
+    
+    .fch {
+        position: absolute;
+        width: 400px;
+        left: 165px;
+        bottom: -5px;
+        color: rgb(128, 122, 122);
+        font-size: 25px;
+        transition: all 0.6s;
+    }
+    
+    .fch:hover {
+        transform: scale(1.4);
+        color: pink;
+    }
+    
+    .third {
+        position: absolute;
+        width: 230px;
+        height: 25px;
+        background-color: rgb(124, 126, 203);
+        left: 50px;
+        top: 780px;
+    }
+    
+    .fourth {
+        position: absolute;
+        width: 230px;
+        height: 25px;
+        background-color: rgb(213, 142, 172);
+        top: 770px;
+        left: 100px;
+        box-shadow: 0 0 7px #adabab;
+    }
+    
+    .gch {
+        position: absolute;
+        color: rgb(107, 106, 105);
+        font-size: 20px;
+        left: 120px;
+        transition: all 0.6s;
+    }
+    
+    .gch:hover {
+        transform: scale(1.4);
+        color: rgb(225, 235, 214);
+    }
+    
+    .hch {
+        position: absolute;
+        font-size: 20px;
+        color: rgb(121, 121, 119);
+        left: 45px;
+        top: 830px;
+        transition: all 0.6s;
+    }
+    
+    .hch:hover {
+        transform: scale(1.4);
+        color: rgb(20, 20, 19);
+    }
+    
+    body,
+    html {
+        height: 100%;
+    }
+    
+    body {
+        background-color: white;
+        background-size: 100% 100%;
+    }
+    
+    #box {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 500px;
+        left: 350px;
+        margin: auto;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg) rotateY(0deg);
+        animation: go 20s linear infinite;
+    }
+    
+    #box img {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        top: 500px;
+        left: 350px;
+    }
+    
+    #box img:nth-child(1) {
+        transform: rotateY(0deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(2) {
+        transform: rotateY(36deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(3) {
+        transform: rotateY(72deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(4) {
+        transform: rotateY(108deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(5) {
+        transform: rotateY(144deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(6) {
+        transform: rotateY(180deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(7) {
+        transform: rotateY(216deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(8) {
+        transform: rotateY(252deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(9) {
+        transform: rotateY(288deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(10) {
+        transform: rotateY(324deg) translateZ(650px);
+    }
+    
+    #box img:nth-child(11) {
+        transform: rotateY(360deg) translateZ(650px);
+    }
+    
+    @keyframes go {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        25% {
+            transform: rotateX(20deg) rotateY(180deg);
+        }
+        50% {
+            transform: rotateX(0deg) rotateY(360deg);
+        }
+        75% {
+            transform: rotateX(-20deg) rotateY(540deg);
+        }
+        100% {
+            transform: rotateX(0deg) rotateY(720deg);
+        }
+    }
+    
+    .six {
+        position: absolute;
+        width: 230px;
+        height: 25px;
+        background-color: rgb(213, 142, 172);
+        top: 750px;
+        left: 295px;
+    }
+    
+    .seven {
+        position: absolute;
+        width: 230px;
+        height: 25px;
+        background-color: rgb(124, 126, 203);
+        left: 350px;
+        top: 740px;
+        box-shadow: 0 0 7px #adabab;
+    }
+    
+    .mch {
+        position: absolute;
+        font-size: 20px;
+        color: rgb(99, 97, 95);
+        left: 120px;
+        transition: all 0.6s;
+    }
+    
+    .mch:hover {
+        transform: scale(1.4);
+        color: rgb(221, 247, 210);
+    }
+    
+    .eight {
+        position: absolute;
+        width: 850px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        top: 810px;
+        left: 290px;
+    }
+    
+    .nch {
+        position: absolute;
+        color: rgb(145, 204, 202);
+        font-size: 20px;
+        left: 50px;
+        text-align: center;
+        display: block;
+        border: 3px solid rgb(241, 156, 194);
+        width: 240px;
+        height: 196px;
+        left: 9px;
+        transition: all 0.6s;
+    }
+    
+    .nch:hover {
+        transform: scale(1.4);
+    }
+    
+    .och {
+        position: absolute;
+        left: 577px;
+        transition: all 0.6s;
+    }
+    
+    .och:hover {
+        transform: scale(1.4);
+    }
+    
+    .pch {
+        position: absolute;
+        left: 274px;
+        transition: all 0.6s;
+    }
+    
+    .pch:hover {
+        transform: scale(1.4);
+    }
+    
+    .nine {
+        position: absolute;
+        width: 230px;
+        height: 25px;
+        background-color: rgb(174, 93, 160);
+        left: 300px;
+        top: 1100px;
+    }
+    
+    .ten {
+        position: absolute;
+        width: 230px;
+        height: 25px;
+        background-color: rgb(233, 104, 161);
+        left: 350px;
+        top: 1090px;
+        box-shadow: 0 0 7px #adabab;
+    }
+    
+    .qch {
+        position: absolute;
+        color: rgb(99, 97, 95);
+        font-size: 20px;
+        left: 120px;
+        transition: all 0.6s;
+    }
+    
+    .qch:hover {
+        transform: scale(1.4);
+        color: rgb(221, 247, 210);
+    }
+    
+    .rch {
+        position: absolute;
+        color: rgb(134, 220, 196);
+        font-size: 20px;
+        top: 1780px;
+        left: 300px;
+        display: block;
+        border: 2px solid rgb(134, 220, 196);
+        text-align: center;
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        transition: all 0.6s;
+    }
+    
+    .rch:hover {
+        transform: scale(1.4);
+        color: rgb(129, 201, 218);
+    }
+    
+    .eve {
+        position: absolute;
+        width: 850px;
+        height: 250px;
+        background-color: white;
+        top: 1150px;
+        left: 300px;
+    }
+    
+    .sch {
+        transition: all 0.6s;
+    }
+    
+    .sch:hover {
+        transform: scale(1.4);
+    }
+    
+    .tch {
+        position: absolute;
+        left: 495px;
+        height: 250px;
+        width: 200px;
+        transition: all 0.6s;
+    }
+    
+    .tch:hover {
+        transform: scale(1.4);
+    }
+    
+    .uch {
+        position: absolute;
+        top: 0px;
+        left: 720px;
+        height: 250px;
+        width: 200px;
+        transition: all 0.6s;
+    }
+    
+    .uch:hover {
+        transform: scale(1.4);
+    }
+    
+    
+    .ndc {
+        position: absolute;
+        left: 5px;
+        color: #adabab;
+        transition: all 0.6s;
+    }
+    
+    .ndc:hover {
+        transform: scale(1.4);
+        color: rgb(206, 185, 245);
+    }
+    
+    .odc {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: #adabab;
+    }
+    
+    .pdc {
+        position: absolute;
+        left: 260px;
+        top: 0px;
+        color: #adabab;
+        font-size: 25px;
+        transition: all 0.6s;
+    }
+    
+    .pdc:hover {
+        transform: scale(1.4);
+        color: rgb(206, 185, 245);
+    }
+    
+    .qdc {
+        position: absolute;
+        left: 270px;
+        top: 10px;
+        color: #adabab;
+    }
+    
+    .rdc {
+        position: absolute;
+        color: #adabab;
+        font-size: 25px;
+        left: 500px;
+        top: 0px;
+        transition: all 0.6s;
+    }
+    
+    .rdc:hover {
+        transform: scale(1.4);
+        color: rgb(206, 185, 245);
+    }
+    
+    .sdc {
+        position: absolute;
+        color: #adabab;
+        left: 510px;
+        top: 10px;
+    }
+    
+    .tdc {
+        position: absolute;
+        color: #adabab;
+        left: 750px;
+        top: 0px;
+        transition: all 0.6s;
+    }
+    
+    .tdc:hover {
+        transform: scale(1.4);
+        color: rgb(206, 185, 245);
+    }
+    
+    .udc {
+        position: absolute;
+        color: #adabab;
+        left: 760px;
+        top: 10px;
+    }
+
+    .footer {
+        width: 1000px;
+        height: 140px;
+        background-color: rgb(197, 228, 243);
+        /* position: relative; */
+        /* left: 250px; */
+        margin: auto;
+        position: absolute;
+        top: 1500px;
+    }
+    .footer h2 {
+        text-align: center;
+    }
+    .footer div {
+        margin: auto;
+        text-align: center;
+    }
